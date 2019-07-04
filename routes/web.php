@@ -1,6 +1,7 @@
 <?php
 
 /*
+
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -12,9 +13,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.master');
 });
 
-Auth::routes();
+Route::get('/item', 'AdminController@item');
+Route::get('/addItem', 'AdminController@addItem');
+Route::get('/viewSale', 'AdminController@viewSale');
+Route::get('/order', 'AdminController@order');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/login', 'CustomerController@login');
+Route::get('/register', 'CustomerController@register');
+Route::get('/logout', 'CustomerController@logout');
+Route::get('/shop', 'CustomerController@shop');
+Route::get('/shop1', 'CustomerController@shop1');
+
+
+
+
+
