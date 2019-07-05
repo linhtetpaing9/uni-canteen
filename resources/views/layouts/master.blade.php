@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>canteen</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	@include('layouts.link')
+	@include('layouts.meta')
+	@include('layouts.link')
+	@yield('style')
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
 
     
@@ -48,13 +52,6 @@
 
 
 
-</body>
-=======
-    @include('layouts.meta')
-	@include('layouts.link')
-	@yield('style')
-</head>
-<body class="hold-transition skin-blue sidebar-mini">
 	<div class="">
 		@include('layouts.header')
 		@include('layouts.sidebar')
@@ -73,5 +70,9 @@
 
 
  </body>
->>>>>>> 20199cbfd432a69ea0e840747fb739170ec8deb9
+
+
+
+    
+
 </html>
