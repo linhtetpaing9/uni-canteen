@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                   Mar Lar Soe
+                   Mar Lar Soe you are logged in!
                 </div>
             </div>
         </div>
