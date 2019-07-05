@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>canteen</title>
@@ -48,4 +49,29 @@
 
 
 </body>
+=======
+    @include('layouts.meta')
+	@include('layouts.link')
+	@yield('style')
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="">
+		@include('layouts.header')
+		@include('layouts.sidebar')
+		<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+		    
+		    <section class="content">
+		    <div class="row">
+		    	@yield('content')
+		    </div>
+		    </section>
+    
+        </div>
+	    @include('layouts.script')
+	</div>
+
+
+ </body>
+>>>>>>> 20199cbfd432a69ea0e840747fb739170ec8deb9
 </html>
